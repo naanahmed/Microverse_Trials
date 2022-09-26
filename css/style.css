@@ -10,8 +10,37 @@
   justify-content: space-around;
 }
 #header-img{
-  width: 30%;
+  width: 15%;
   display: flex;
+}
+
+#header{
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+#email{
+    width: 100%;
+}
+
+#form{
+    align-items: center;
+    display: block;
+    justify-content: center;
+}
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit{
+    margin-top: 10px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
 }
 
 h3{
