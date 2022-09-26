@@ -1,6 +1,4 @@
 #nav-bar{
-  position:fixed;
-  top:5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -17,10 +15,22 @@
 }
 
 #header{
-    align-items: center;
-    padding: 20px;
-    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #dfdfdf;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
 }
+@media (min-height: 480px) {
+    #header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+  }
 
 #email{
     width: 150%;
@@ -96,6 +106,10 @@
     margin-bottom: 10px;
 }
 
+body {
+    padding: 150px;
+}
+
 li {
     list-style: none;
 }
@@ -120,9 +134,4 @@ footer ul{
 footer ul li{
   font-size:20px;
   margin-right:10px;
-}
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
 }
