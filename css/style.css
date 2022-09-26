@@ -1,4 +1,6 @@
 #nav-bar{
+  position:fixed;
+  top:5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -60,7 +62,7 @@
     width: 120%;
     margin-left: -25px;
 }
-#video{
+#video_container{
   display: flex;
   justify-content:center;
   align-items: center;
@@ -101,4 +103,26 @@ li {
 h3{
   display: block;
   text-align: center;
+}
+footer{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  text-align:end
+}
+footer ul{
+  display: flex;
+  flex: auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+footer ul li{
+  font-size:20px;
+  margin-right:10px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
